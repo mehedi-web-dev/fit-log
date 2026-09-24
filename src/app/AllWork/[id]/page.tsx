@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { IWork } from "@/type";
 import { FaBookmark, FaRegCalendarPlus } from "react-icons/fa6";
+import AddButton from "@/component/Button/addButton";
 
 export interface PageProps {
   params: {
@@ -167,13 +168,7 @@ const Page = async ({ params }: PageProps) => {
           </div>
 
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/MyPlan"
-              className="flex h-10.5 items-center gap-2 rounded-lg bg-[#caff00] px-5 text-[12px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
-            >
-              <FaRegCalendarPlus size={15} />
-              Add to today&apos;s plan
-            </Link>
+            <AddButton work={work}></AddButton>
 
             <button
               type="button"
