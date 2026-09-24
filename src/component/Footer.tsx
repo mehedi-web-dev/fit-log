@@ -5,7 +5,7 @@ import logo from "@/assets/Link - Brand Logo.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-[#24272e] bg-[#191c22]">
+    <footer className="w-full border-t border-[#24272e] bg-[#090A0D]">
         <div className="mx-auto flex h-22.5 max-w-290 flex-col items-center justify-center gap-3 px-4 sm:flex-row sm:justify-between">
 
        {/* left */}
