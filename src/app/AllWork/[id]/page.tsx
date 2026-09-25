@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
+
 
 import { IWork } from "@/type";
-import { FaBookmark, FaRegCalendarPlus } from "react-icons/fa6";
+import { FaBookmark } from "react-icons/fa6";
 import AddButton from "@/component/Button/addButton";
 
 export interface PageProps {

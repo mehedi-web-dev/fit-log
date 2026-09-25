@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { IWork } from "@/type";
 import {
   createContext,
@@ -18,12 +18,12 @@ interface WorkContextValue {
   setSavePlan: Dispatch<SetStateAction<IWork[]>>;
 }
 
-  export const workContex = createContext<WorkContextValue>({
-    addPlan: [],
-  setAddPlan:  () => {},
+export const workContex = createContext<WorkContextValue>({
+  addPlan: [],
+  setAddPlan: () => {},
   savePlan: [],
-  setSavePlan:  () => {}
-  });
+  setSavePlan: () => {},
+});
 
 const WorkProvider = ({ children }: WorkProviderProps) => {
   const [addPlan, setAddPlan] = useState<IWork[]>([]);

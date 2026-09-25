@@ -13,20 +13,18 @@ export interface AddButtonProps {
 const AddButton = ({ work }: AddButtonProps) => {
   const { addPlan, setAddPlan } = useContext(workContex);
 
-const handleAddBtn = (): void => {
-  const alreadyWork= addPlan.some(
-    (item: IWork) => item.id === work.id,
-  );
+  const handleAddBtn = (): void => {
+    const alreadyWork = addPlan.some((item: IWork) => item.id === work.id);
 
-  if (alreadyWork) {
-    toast.info(`This item already added`);
-    return;
-  }
+    if (alreadyWork) {
+      toast.info(`This item already added`);
+      return;
+    }
 
-  setAddPlan([...addPlan,work]);
+    setAddPlan([...addPlan, work]);
 
-  toast.success(`Item add todays plan`);
-};
+    toast.success(`Item add todays plan`);
+  };
 
   return (
     <button
