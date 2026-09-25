@@ -21,7 +21,7 @@ const MarkDoneButton = ({ id }: { id: number }) => {
         className="flex h-9 items-center cursor-pointer gap-1.5 rounded-full bg-[#caff00] px-4 text-[11px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
       >
         <FiCheck size={14} strokeWidth={3} />
-        <span className="hidden sm:inline">Mark as Done</span>
+        <span >Mark as Done</span>
       </button>
     </div>
   );

@@ -32,8 +32,10 @@ const AddButton = ({ work }: AddButtonProps) => {
       type="button"
       className="flex h-10.5 cursor-pointer items-center gap-2 rounded-lg bg-[#caff00] px-5 text-[12px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
     >
-      <FaRegCalendarPlus size={15} />
-      Add to today&apos;s plan
+      <FaRegCalendarPlus size={15} />{" "}
+      {addPlan.some((item: IWork) => item.id === work.id)
+        ? "Added"
+        : "Add to today's plan"}
     </button>
   );
 };
