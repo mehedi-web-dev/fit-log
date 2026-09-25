@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-
 import { IWork } from "@/type";
 import { FaBookmark } from "react-icons/fa6";
 import AddButton from "@/component/Button/addButton";
+import SavedButton from "@/component/Button/savedButton";
 
 export interface PageProps {
   params: {
@@ -170,13 +170,7 @@ const Page = async ({ params }: PageProps) => {
           <div className="mt-7 flex flex-wrap gap-3">
             <AddButton work={work}></AddButton>
 
-            <button
-              type="button"
-              className="flex h-10.5 items-center gap-2 rounded-lg border border-[#343943] px-5 text-[12px] font-medium text-[#d2d4d9] transition hover:border-[#555b67] hover:text-white"
-            >
-              <FaBookmark size={15} />
-              Save for later
-            </button>
+            <SavedButton work={work}></SavedButton>
           </div>
         </div>
       </div>

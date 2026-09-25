@@ -6,10 +6,13 @@ import { toast } from "react-toastify";
 
 const RemoveButton = ({ id }: { id: number }) => {
   const { addPlan, setAddPlan } = useContext(workContex);
+  const { savePlan, setSavePlan } = useContext(workContex);
 
   const handleRemove = (id: number) => {
     const remainingwork = addPlan.filter((work) => work.id !== id);
     setAddPlan(remainingwork);
+    const remainingworks = savePlan.filter((work) => work.id !== id);
+    setSavePlan(remainingworks);
     toast.success(`Item remove successfully`);
   };
 

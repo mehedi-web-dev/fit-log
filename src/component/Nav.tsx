@@ -12,7 +12,8 @@ const Nav = () => {
   const pathname = usePathname();
   const isWorkoutActive = pathname === "/";
   const isMyPlanActive = pathname.startsWith("/MyPlan");
-  const {addPlan}=useContext(workContex)
+  const { addPlan } = useContext(workContex);
+  const { savePlan } = useContext(workContex);
 
   const links = (
     <>
@@ -98,7 +99,7 @@ const Nav = () => {
             <span>Saved</span>
 
             <span className="flex h-5.5 min-w-7 items-center justify-center rounded-full border border-[#9b9da4] px-2 text-xs text-white">
-              0
+              {savePlan.length}
             </span>
           </Link>
         </div>

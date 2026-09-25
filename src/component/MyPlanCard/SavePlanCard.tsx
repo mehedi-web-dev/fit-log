@@ -4,21 +4,14 @@ import { FiClock } from "react-icons/fi";
 import { FaFire, FaStar } from "react-icons/fa";
 import Link from "next/link";
 import RemoveButton from "../Button/removeButton";
-import MarkDoneButton from "../Button/markDoneButton";
 
-export interface TodayPlanCardProps {
+
+export interface SavePlanCardProps {
   work: IWork;
 }
 
-const TodayPlanCard = ({ work }: TodayPlanCardProps) => {
-  const {
-    name,
-    image,
-    equipment,
-    duration,
-    caloriesBurned,
-    rating,
-  } = work;
+const SavePlanCard = ({ work }:SavePlanCardProps) => {
+  const { name, image, equipment, duration, caloriesBurned, rating } = work;
 
   return (
     <div className="flex w-full items-center gap-4 rounded-2xl border border-[#252a33] bg-[#15181e] p-3">
@@ -79,8 +72,6 @@ const TodayPlanCard = ({ work }: TodayPlanCardProps) => {
           </button>
         </Link>
 
-        {/* Mark as Done */}
-        <MarkDoneButton id={work.id}></MarkDoneButton>
 
         <RemoveButton id={work.id}></RemoveButton>
       </div>
@@ -88,4 +79,4 @@ const TodayPlanCard = ({ work }: TodayPlanCardProps) => {
   );
 };
 
-export default TodayPlanCard;
+export default SavePlanCard;
