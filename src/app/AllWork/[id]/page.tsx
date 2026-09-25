@@ -53,12 +53,12 @@ const Page = async ({ params }: PageProps) => {
 
         <div className="flex flex-col">
           {/* Title */}
-          <h1 className="text-[32px] font-black uppercase leading-[0.95] tracking-[-1px] text-[#FFFFFF] md:text-[36px]">
+          <h1 className="text-[32px] font-black font-oswald uppercase leading-[0.95] tracking-[-1px] text-[#FFFFFF] md:text-[36px]">
             {work.name}
           </h1>
 
           {/* Description */}
-          <p className="mt-3 max-w-130 text-[13px] leading-normal text-[#969ba6] sm:text-[14px]">
+          <p className="mt-3 max-w-130 text-[13px] font-inter leading-normal text-[#969ba6] sm:text-[14px]">
             {work.description}
           </p>
 
@@ -78,7 +78,7 @@ const Page = async ({ params }: PageProps) => {
           <div className="mt-5 overflow-hidden rounded-xl border border-[#292d35] bg-[#151922]">
             {/* Equipment */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px] font-bold font-inter uppercase tracking-[0.5px] text-[#8f95a1]">
                 Equipment
               </span>
 
@@ -89,7 +89,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Difficulty */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px]  font-inter font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
                 Difficulty
               </span>
 
@@ -100,7 +100,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Sets */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px]  font-inter font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
                 Sets
               </span>
 
@@ -109,7 +109,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Reps */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px]  font-inter font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
                 Reps
               </span>
 
@@ -118,7 +118,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Duration */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px]  font-inter font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
                 Duration
               </span>
 
@@ -129,7 +129,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Calories */}
             <div className="flex items-center justify-between border-b border-[#252a32] px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px] font-bold  font-inter uppercase tracking-[0.5px] text-[#8f95a1]">
                 Calories
               </span>
 
@@ -140,7 +140,7 @@ const Page = async ({ params }: PageProps) => {
 
             {/* Rating */}
             <div className="flex items-center justify-between px-4 py-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.5px] text-[#8f95a1]">
+              <span className="text-[10px] font-bold  font-inter uppercase tracking-[0.5px] text-[#8f95a1]">
                 Rating
               </span>
 
@@ -149,7 +149,7 @@ const Page = async ({ params }: PageProps) => {
           </div>
 
           <div className="mt-6">
-            <h2 className="text-[13px] font-bold uppercase text-white">
+            <h2 className="text-[13px] font-bold font-inter uppercase text-white">
               Instructions
             </h2>
 

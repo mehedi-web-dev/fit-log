@@ -28,11 +28,11 @@ const MyPlanPage = () => {
       <div className="mx-auto max-w-290">
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-3xl font-black uppercase tracking-tight text-white">
+          <h1 className="text-3xl font-black font-oswald uppercase tracking-tight text-white">
             My Plan
           </h1>
 
-          <p className="mt-1 text-sm text-[#8A92A0]">
+          <p className="mt-1 text-[14px] font-inter text-[#8A92A0]">
             Cap of five lifts for today. Finish them, then load more.
           </p>
         </div>
@@ -41,27 +41,27 @@ const MyPlanPage = () => {
         <div className="mb-7 grid grid-cols-1 overflow-hidden rounded-2xl border border-[#252a33] bg-[#15181e] md:grid-cols-3">
           {/* Exercises */}
           <div className="border-b border-[#252a33] px-5 py-5 md:border-b-0 md:border-r">
-            <p className="text-[11px] text-[#8A92A0]">Exercises</p>
+            <p className="text-[11px] text-[#8A92A0] font-inter">Exercises</p>
 
-            <h3 className="mt-1 text-4xl font-black leading-none text-[#CCFF00]">
+            <h3 className="mt-1 text-4xl font-black font-oswald leading-none text-[#CCFF00]">
               {selectedPlan.length}
             </h3>
           </div>
 
           {/* Minutes */}
           <div className="border-b border-[#252a33] px-5 py-5 md:border-b-0 md:border-r">
-            <p className="text-[11px] text-[#8A92A0]">Minutes</p>
+            <p className="text-[11px] font-inter text-[#8A92A0]">Minutes</p>
 
-            <h3 className="mt-1 text-4xl font-black leading-none text-white">
+            <h3 className="mt-1 text-4xl font-black font-oswald leading-none text-white">
               {totalMinutes}
             </h3>
           </div>
 
           {/* Calories */}
           <div className="px-5 py-5">
-            <p className="text-[11px] text-[#8A92A0]">Calories</p>
+            <p className="text-[11px] font-inter text-[#8A92A0]">Calories</p>
 
-            <h3 className="mt-1 text-4xl font-black leading-none text-white">
+            <h3 className="mt-1 text-4xl font-black font-oswald leading-none text-white">
               {totalCalories}
             </h3>
           </div>
@@ -87,17 +87,17 @@ const MyPlanPage = () => {
                   ))
                 ) : (
                   <div className="flex min-h-45 flex-col items-center justify-center px-4 text-center">
-                    <h3 className="text-sm font-extrabold tracking-wide text-white">
+                    <h3 className="text-[20px] font-extrabold font-oswald tracking-wide text-white">
                       NOTHING HERE YET
                     </h3>
 
-                    <p className="mt-1 max-w-md text-center text-xs leading-5 text-[#A1A1AA]">
+                    <p className="mt-1 max-w-md text-center font-inter text-[12px] leading-5 text-[#A1A1AA]">
                       Browse the library and add a lift to get today moving.
                     </p>
 
                     <Link
                       href="/"
-                      className="mt-5 inline-flex h-9 items-center gap-2 rounded-full bg-[#caff00] px-5 text-[11px] font-bold text-[#101217] transition-all duration-200 hover:bg-[#b9ed00] hover:shadow-[0_0_20px_rgba(202,255,0,0.12)]"
+                      className="mt-5 inline-flex h-9 items-center gap-2 rounded-full bg-[#caff00] px-5 text-[11px] font-bold text-[#101217] transition-all font-inter duration-200 hover:bg-[#b9ed00] hover:shadow-[0_0_20px_rgba(202,255,0,0.12)]"
                     >
                       Go to workout
                     </Link>
@@ -109,7 +109,7 @@ const MyPlanPage = () => {
             <input
               type="radio"
               name="my_tabs_3"
-              className="tab"
+              className="tab font-inter"
               aria-label="Saved"
               onChange={() => setActiveTab("saved")}
             />
@@ -122,17 +122,17 @@ const MyPlanPage = () => {
                   ))
                 ) : (
                   <div className="flex min-h-45 flex-col items-center justify-center px-4 text-center">
-                    <h3 className="text-sm font-extrabold tracking-wide text-white">
+                    <h3 className="text-[20px] font-extrabold font-oswald tracking-wide text-white">
                       NOTHING HERE YET
                     </h3>
 
-                    <p className="mt-1 max-w-md text-center text-xs leading-5 text-[#A1A1AA]">
+                    <p className="mt-1 max-w-md text-center font-inter text-[12px] leading-5 text-[#A1A1AA]">
                       Browse the library and add a lift to get today moving.
                     </p>
 
                     <Link
                       href="/"
-                      className="mt-5 inline-flex h-9 items-center gap-2 rounded-full bg-[#caff00] px-5 text-[11px] font-bold text-[#101217] transition-all duration-200 hover:bg-[#b9ed00] hover:shadow-[0_0_20px_rgba(202,255,0,0.12)]"
+                      className="mt-5 inline-flex h-9 items-center font-inter gap-2 rounded-full bg-[#caff00] px-5 text-[11px] font-bold text-[#101217] transition-all duration-200 hover:bg-[#b9ed00] hover:shadow-[0_0_20px_rgba(202,255,0,0.12)]"
                     >
                       Go to workout
                     </Link>

@@ -40,7 +40,7 @@ const LibraryCard = ({ work }: LibraryCardProps) => {
             {muscleGroups.map((muscle) => (
               <span
                 key={muscle}
-                className="rounded-full bg-[#caff00] px-3 py-1 text-[11px] font-bold uppercase text-[#000000]"
+                className="rounded-full bg-[#caff00] font-inter px-3 py-1 text-[11px] font-bold uppercase text-[#000000]"
               >
                 {muscle}
               </span>
@@ -48,7 +48,7 @@ const LibraryCard = ({ work }: LibraryCardProps) => {
           </div>
 
           {/* Title */}
-          <h2 className="text-[18px] font-black uppercase leading-7 tracking-[-0.3px] text-[#f4f4f5]">
+          <h2 className="text-[18px] font-black font-oswald uppercase leading-7 tracking-[-0.3px] text-[#f4f4f5]">
             {name}
           </h2>
 

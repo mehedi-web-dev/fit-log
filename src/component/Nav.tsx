@@ -20,7 +20,7 @@ const Nav = () => {
       <li>
         <Link
           href="/"
-          className={`rounded-xl px-4 py-2 text-sm font-semibold transition ${
+          className={`rounded-xl px-4 py-2 text-sm font-inter font-semibold transition ${
             isWorkoutActive
               ? "bg-[#191c22] text-[#caff00]"
               : "text-[#c4c5ca] hover:text-white"
@@ -86,7 +86,7 @@ const Nav = () => {
           >
             <span>Plan</span>
 
-            <span className="flex h-5.5 min-w-7 items-center justify-center rounded-full bg-[#caff00] px-2 text-xs font-bold text-[#111318]">
+            <span className="flex h-5.5 min-w-7 items-center font-inter justify-center rounded-full bg-[#caff00] px-2 text-xs font-bold text-[#111318]">
               {addPlan.length}
             </span>
           </Link>
@@ -94,7 +94,7 @@ const Nav = () => {
           {/* Saved */}
           <Link
             href="/MyPlan"
-            className="flex items-center gap-2 text-xs font-semibold text-[#d0d1d5]"
+            className="flex items-center gap-2 text-xs font-inter font-semibold text-[#d0d1d5]"
           >
             <span>Saved</span>
 

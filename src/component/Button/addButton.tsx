@@ -23,14 +23,14 @@ const AddButton = ({ work }: AddButtonProps) => {
 
     setAddPlan([...addPlan, work]);
 
-    toast.success(`Item add todays plan`);
+    toast.success(`Added to today's plan`);
   };
 
   return (
     <button
       onClick={handleAddBtn}
       type="button"
-      className="flex h-10.5 cursor-pointer items-center gap-2 rounded-lg bg-[#caff00] px-5 text-[12px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
+      className="flex h-10.5 cursor-pointer font-inter items-center gap-2 rounded-lg bg-[#caff00] px-5 text-[12px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
     >
       <FaRegCalendarPlus size={15} />{" "}
       {addPlan.some((item: IWork) => item.id === work.id)

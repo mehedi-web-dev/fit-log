@@ -22,7 +22,7 @@ const RemoveButton = ({ id }: { id: number }) => {
         onClick={() => handleRemove(id)}
         type="button"
         aria-label="Remove workout"
-        className="ml-1 flex h-8 w-8 items-center cursor-pointer justify-center text-[#737985] transition hover:text-white"
+        className="ml-1 flex h-8 w-8 items-center  cursor-pointer justify-center text-[#737985] transition hover:text-white"
       >
         <FiX size={16} />
       </button>

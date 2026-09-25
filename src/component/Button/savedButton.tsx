@@ -30,7 +30,7 @@ const SavedButton = ({ work }: AddButtonProps) => {
     <button
       onClick={handleSaveBtn}
       type="button"
-      className="flex h-10.5 items-center gap-2 cursor-pointer rounded-lg border border-[#343943] px-5 text-[12px] font-medium text-[#d2d4d9] transition hover:border-[#555b67] hover:text-white"
+      className="flex h-10.5 items-center gap-2 cursor-pointer rounded-lg border border-[#343943] px-5 text-[12px] font-medium text-[#d2d4d9] font-inter transition hover:border-[#555b67] hover:text-white"
     >
       <FaBookmark size={15} />
       {savePlan.some((item: IWork) => item.id === work.id)? " Saved": "Save for later"}

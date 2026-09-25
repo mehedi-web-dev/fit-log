@@ -18,7 +18,7 @@ const MarkDoneButton = ({ id }: { id: number }) => {
       <button
         onClick={() => handleRemove(id)}
         type="button"
-        className="flex h-9 items-center cursor-pointer gap-1.5 rounded-full bg-[#caff00] px-4 text-[11px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
+        className="flex h-9 items-center font-inter cursor-pointer gap-1.5 rounded-full bg-[#caff00] px-4 text-[11px] font-bold text-[#101217] transition hover:bg-[#b9ed00]"
       >
         <FiCheck size={14} strokeWidth={3} />
         <span >Mark as Done</span>

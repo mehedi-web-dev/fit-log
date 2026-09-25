@@ -1,3 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+}
 

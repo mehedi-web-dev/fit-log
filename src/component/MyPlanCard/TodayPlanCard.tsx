@@ -29,31 +29,31 @@ const TodayPlanCard = ({ work }: TodayPlanCardProps) => {
         </div>
         <div className="min-w-0 flex-1 mt-3.5 md:mt-0 md:-ml-28">
           {/* Name */}
-          <h3 className="truncate text-sm font-extrabold uppercase text-[#f5f5f5]">
+          <h3 className="truncate text-sm font-oswald font-extrabold uppercase text-[#f5f5f5]">
             {name}
           </h3>
 
           {/* Equipment */}
-          <p className="mt-0.5 text-[11px] font-medium text-[#9da2ad]">
+          <p className="mt-0.5 text-[11px] font-inter font-medium text-[#9da2ad]">
             {equipment}
           </p>
 
           {/* Stats */}
           <div className="mt-1.5 flex items-center gap-3 text-[11px] text-[#c4c7ce]">
             {/* Duration */}
-            <span className="flex items-center gap-1">
+            <span className="flex items-center font-inter gap-1">
               <FiClock size={13} className="text-[#caff00]" />
               {duration} min
             </span>
 
             {/* Calories */}
-            <span className="flex items-center gap-1">
+            <span className="flex items-center font-inter gap-1">
               <FaFire size={11} className="text-[#caff00]" />
               {caloriesBurned} kcal
             </span>
 
             {/* Rating */}
-            <span className="flex items-center gap-1">
+            <span className="flex items-center font-inter gap-1">
               <FaStar size={11} className="text-[#caff00]" />
               {rating}
             </span>
@@ -67,7 +67,7 @@ const TodayPlanCard = ({ work }: TodayPlanCardProps) => {
         <Link href={`/AllWork/${work.id}`}>
           <button
             type="button"
-            className=" h-9 cursor-pointer items-center rounded-full border border-[#343b47] px-4 text-[11px] font-medium text-[#d4d6dc] transition hover:border-[#626b7a] hover:text-white sm:flex"
+            className=" h-9 cursor-pointer font-inter items-center rounded-full border border-[#343b47] px-4 text-[11px] font-medium text-[#d4d6dc] transition hover:border-[#626b7a] hover:text-white sm:flex"
           >
             View Details
           </button>
