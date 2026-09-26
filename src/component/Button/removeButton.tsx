@@ -13,7 +13,7 @@ const RemoveButton = ({ id }: { id: number }) => {
     setAddPlan(remainingwork);
     const remainingworks = savePlan.filter((work) => work.id !== id);
     setSavePlan(remainingworks);
-    toast.success(`Item remove successfully`);
+    toast.success("Workout removed from your plan!");
   };
 
   return (

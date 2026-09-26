@@ -23,7 +23,7 @@ const SavedButton = ({ work }: AddButtonProps) => {
 
     setSavePlan([...savePlan, work]);
 
-    toast.success(`Item Saved`);
+    toast.success(`Workout saved for later!`);
   };
 
   return (

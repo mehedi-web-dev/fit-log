@@ -13,7 +13,7 @@ const Footer = () => {
         </Link>
 
         {/* right */}
-        <p className="text-[14px] font-inter font-medium text-[#6B7280]">
+        <p className="text-[14px] font-inter text-center font-medium text-[#6B7280]">
           © 2026 FitLog — Workout Library. Train hard, log honest.
         </p>
       </div>

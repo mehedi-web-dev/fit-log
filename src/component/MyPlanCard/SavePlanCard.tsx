@@ -25,7 +25,7 @@ const SavePlanCard = ({ work }: SavePlanCardProps) => {
             className="object-cover"
           />
         </div>
-        <div className="min-w-0 flex-1  mt-3.5 md:mt-0 md:-ml-28">
+        <div className="min-w-0 flex-1  mt-3.5 md:mt-0 md:-ml-16">
           {/* Name */}
           <h3 className="truncate text-sm font-oswald font-extrabold uppercase text-[#f5f5f5]">
             {name}
